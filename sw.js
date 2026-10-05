@@ -1,7 +1,7 @@
 /* Gotham City Social web app — network-first service worker.
    Always tries the live site first (so new deploys show up immediately);
    falls back to the last cached copy when offline. */
-const CACHE = "gcs-app-v1";
+const CACHE = "gcs-app-v2";
 const CORE = ["./", "./index.html", "./app/", "./manifest.webmanifest", "./favicon.svg",
   "./assets/app/icon-192.png", "./assets/app/icon-512.png", "./assets/app/app-art-720.jpg"];
 
