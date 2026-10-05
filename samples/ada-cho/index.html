@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ada Cho · Sample — client TBD</title>
+    <meta name="description" content="Sample placeholder website for an illustrator. Client TBD. Not a live creator account." />
+    <link rel="stylesheet" href="../sample.css" />
+    <style>
+      body { margin: 0; background: #f6f3ee; color: #161616; font-family: "Gill Sans", "Trebuchet MS", "Segoe UI", sans-serif; line-height: 1.5; }
+      a { color: #163a78; }
+      .wrap { width: min(960px, calc(100% - 2rem)); margin-inline: auto; }
+      header.top { padding: 2.2rem 0 1rem; display: grid; gap: 0.4rem; }
+      .eyebrow { letter-spacing: 0.16em; text-transform: uppercase; font-size: 0.72rem; margin: 0; color: #163a78; }
+      h1 { font-size: clamp(3rem, 8vw, 5rem); line-height: 0.9; margin: 0; letter-spacing: -0.03em; }
+      .lede { max-width: 42ch; margin: 0; font-size: 1.15rem; }
+      .works { display: grid; grid-template-columns: 1fr; gap: 0.75rem; padding: 1rem 0 2rem; }
+      figure { margin: 0; background: #fff; border: 1px solid #e4dfd6; }
+      .art { height: 180px; }
+      figcaption { padding: 0.55rem 0.7rem; font-size: 0.92rem; }
+      .a1 { background: linear-gradient(135deg, #163a78 0 46%, #f6f3ee 46% 54%, #e4572e 54%); }
+      .a2 { background: radial-gradient(circle at 30% 40%, #efd8b4 0 28%, transparent 29%), linear-gradient(#111, #111); }
+      .a3 { background: repeating-linear-gradient(90deg, #163a78 0 12px, #f6f3ee 12px 20px); }
+      .a4 { background: linear-gradient(#e4572e, #e4572e) 0 0 / 100% 30% no-repeat, linear-gradient(#111 70%, #efd8b4 70%); }
+      .a5 { background: conic-gradient(from 20deg, #163a78, #efd8b4, #e4572e, #111, #163a78); }
+      .a6 { background: linear-gradient(180deg, #f6f3ee 40%, #163a78 40% 48%, #f6f3ee 48% 70%, #e4572e 70%); }
+      .split { display: grid; gap: 1rem; padding-bottom: 2.5rem; }
+      .panel { background: #fff; border: 1px solid #e4dfd6; padding: 1rem; }
+      h2 { margin: 0 0 0.4rem; font-size: 1.2rem; }
+      ul { margin: 0; padding-left: 1.1rem; }
+      @media (min-width: 700px) {
+        .works { grid-template-columns: 1fr 1fr 1fr; }
+        .works figure:first-child { grid-column: span 2; }
+        .works figure:first-child .art { height: 260px; }
+        .split { grid-template-columns: 1fr 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="sample-bar">
+      <p><strong>Sample — client TBD</strong><span class="chans">site · IG · SEO</span></p>
+      <a href="../../">Gotham City Social</a>
+    </header>
+    <main class="wrap">
+      <header class="top">
+        <p class="eyebrow">Illustrator · Queens</p>
+        <h1>Ada Cho</h1>
+        <p class="lede">Drawings for rooms, posters, and the occasional wall. Sample studio — commissions open when a real client uses this page.</p>
+      </header>
+      <section aria-labelledby="work-title">
+        <h2 id="work-title" class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Sample works</h2>
+        <div class="works">
+          <figure><div class="art a1" role="img" aria-label="Blue and orange diagonal study"></div><figcaption>Study 01 — poster crop</figcaption></figure>
+          <figure><div class="art a2" role="img" aria-label="Black field with a cream circle"></div><figcaption>Study 02 — night window</figcaption></figure>
+          <figure><div class="art a3" role="img" aria-label="Blue and cream stripes"></div><figcaption>Study 03 — awning</figcaption></figure>
+          <figure><div class="art a4" role="img" aria-label="Orange band over black and cream"></div><figcaption>Study 04 — storefront</figcaption></figure>
+          <figure><div class="art a5" role="img" aria-label="Spinning blocks of blue, cream, orange, and black"></div><figcaption>Study 05 — mural test</figcaption></figure>
+          <figure><div class="art a6" role="img" aria-label="Stacked bands of cream, blue, and orange"></div><figcaption>Study 06 — horizon</figcaption></figure>
+        </div>
+      </section>
+      <div class="split">
+        <section class="panel">
+          <h2>Search snippet</h2>
+          <p><strong>Ada Cho — illustrator in Queens</strong></p>
+          <p>Sample title and description. A live page would say what is for sale and where the work can be seen.</p>
+        </section>
+        <section class="panel">
+          <h2>Sample captions</h2>
+          <ul>
+            <li>New studies up. The orange one is the one people stop for.</li>
+            <li>Wall test, before the paint. Sample only.</li>
+          </ul>
+          <p>No live profile. The handle arrives with the client.</p>
+        </section>
+      </div>
+    </main>
+    <footer class="studio-foot">
+      <p>Sample — client TBD · site · IG · SEO</p>
+      <p>Studio contact: Matthew J. Larkin · <a href="tel:+13322852882">(332) 285-2882</a> · <a href="mailto:Gothamcitysochill@gmail.com">Gothamcitysochill@gmail.com</a></p>
+      <p class="op">Powered By The Loeb Network • Christopher M. Loeb Solutions</p>
+    </footer>
+  </body>
+</html>

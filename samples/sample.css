@@ -1,0 +1,72 @@
+:root {
+  color-scheme: light;
+}
+
+.sample-bar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1.1rem;
+  background: #14120c;
+  color: #f6f3ec;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.sample-bar p {
+  margin: 0;
+}
+
+.sample-bar strong {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.sample-bar .chans {
+  color: #e6c98a;
+  margin-left: 0.55rem;
+  letter-spacing: 0.04em;
+  font-size: 0.78rem;
+}
+
+.sample-bar a {
+  color: #e6c98a;
+  font-weight: 600;
+}
+
+.sample-bar a:focus-visible,
+.studio-foot a:focus-visible,
+main a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.studio-foot {
+  padding: 1.5rem 1.1rem 1rem;
+  background: #14120c;
+  color: #cfc8bc;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.studio-foot a {
+  color: #f6f3ec;
+}
+
+.studio-foot .op {
+  margin: 1rem 0 0;
+  font-size: 0.6875rem;
+  line-height: 1.45;
+  color: #c8c2b6;
+}
+
+.studio-foot p {
+  margin: 0.2rem 0;
+}

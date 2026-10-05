@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marigold Window · Sample — client TBD</title>
+    <meta name="description" content="Sample placeholder website for a Bronx florist. Client TBD. Not a live business." />
+    <link rel="stylesheet" href="../sample.css" />
+    <style>
+      body { margin: 0; background: #f7f3e8; color: #243024; font-family: Georgia, "Iowan Old Style", Palatino, serif; line-height: 1.5; }
+      a { color: #8a4b08; }
+      .wrap { width: min(860px, calc(100% - 2rem)); margin-inline: auto; }
+      .hero { padding: 2.4rem 0 1rem; }
+      .eyebrow { font-family: "Avenir Next", "Segoe UI", sans-serif; letter-spacing: 0.16em; text-transform: uppercase; font-size: 0.72rem; color: #c56a12; margin: 0; }
+      h1 { font-weight: 500; font-size: clamp(2.7rem, 7vw, 4.8rem); line-height: 0.92; margin: 0.25rem 0 0.5rem; }
+      .lede { font-size: 1.15rem; max-width: 40ch; }
+      .bunches { display: grid; gap: 0.8rem; padding: 0.5rem 0 1.5rem; }
+      article { background: #fffdf8; border: 1px solid #e3d3b4; padding: 1rem; display: grid; grid-template-columns: 72px 1fr; gap: 0.9rem; align-items: center; }
+      .swatch { height: 72px; }
+      .s1 { background: radial-gradient(circle at 50% 45%, #f2c14e 0 34%, #c56a12 35% 48%, #6e8b74 49%); }
+      .s2 { background: linear-gradient(#f4efe4 0 40%, #c45c26 40% 70%, #234034 70%); }
+      .s3 { background: linear-gradient(160deg, #f7f3e8, #d7e2d4 40%, #8a4b08); }
+      h2 { font-size: 1.25rem; margin: 0 0 0.2rem; font-weight: 500; }
+      article p { margin: 0; font-family: "Avenir Next", "Segoe UI", sans-serif; font-size: 0.95rem; }
+      .price { font-family: "Avenir Next", "Segoe UI", sans-serif; }
+      .split { display: grid; gap: 1rem; padding-bottom: 2.4rem; }
+      .panel { background: #234034; color: #f7f3e8; padding: 1rem 1.1rem; }
+      .panel a { color: #f2c14e; }
+      .panel h2 { color: #f2c14e; font-family: "Avenir Next", "Segoe UI", sans-serif; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; }
+      .panel p, .panel li { font-family: "Avenir Next", "Segoe UI", sans-serif; }
+      ul { margin: 0; padding-left: 1.1rem; }
+      @media (min-width: 740px) {
+        .bunches { grid-template-columns: 1fr; }
+        .split { grid-template-columns: 1fr 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="sample-bar">
+      <p><strong>Sample — client TBD</strong><span class="chans">site · IG · SEO</span></p>
+      <a href="../../">Gotham City Social</a>
+    </header>
+    <main class="wrap">
+      <header class="hero">
+        <p class="eyebrow">Florist · the Bronx</p>
+        <h1>Marigold Window</h1>
+        <p class="lede">Bunches wrapped in paper, a window that changes on Friday, and stems you can actually keep alive. Sample shop — the corner and the delivery map come with the client.</p>
+      </header>
+      <section aria-labelledby="bunch-title">
+        <h2 id="bunch-title" style="font-size:1.6rem">This week’s window</h2>
+        <div class="bunches">
+          <article><div class="swatch s1" role="img" aria-label="Gold marigold bunch"></div><div><h2>Weekday bunch</h2><p>Marigolds, something green, kraft paper. Sample price. <span class="price">$28</span></p></div></article>
+          <article><div class="swatch s2" role="img" aria-label="Low dinner arrangement in rust and green"></div><div><h2>Dinner table</h2><p>Low, wide, meant to talk over. Sample price. <span class="price">$64</span></p></div></article>
+          <article><div class="swatch s3" role="img" aria-label="Soft cream and leaf arrangement"></div><div><h2>Sympathy</h2><p>Quiet whites and leaves. Sample price. <span class="price">$85</span></p></div></article>
+        </div>
+      </section>
+      <div class="split">
+        <section class="panel">
+          <h2>Search snippet</h2>
+          <p><strong>Marigold Window — florist in the Bronx</strong></p>
+          <p>Sample title and description. A live page would name the neighborhood and whether you can pick up today.</p>
+        </section>
+        <section class="panel">
+          <h2>Sample captions</h2>
+          <ul>
+            <li>Friday window is gold. It will not last the weekend.</li>
+            <li>Dinner tables wrapped by three. Call before noon.</li>
+          </ul>
+          <p>No live profile. The handle arrives with the client.</p>
+        </section>
+      </div>
+    </main>
+    <footer class="studio-foot">
+      <p>Sample — client TBD · site · IG · SEO</p>
+      <p>Studio contact: Matthew J. Larkin · <a href="tel:+13322852882">(332) 285-2882</a> · <a href="mailto:Gothamcitysochill@gmail.com">Gothamcitysochill@gmail.com</a></p>
+      <p class="op">Powered By The Loeb Network • Christopher M. Loeb Solutions</p>
+    </footer>
+  </body>
+</html>
