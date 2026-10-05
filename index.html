@@ -19,6 +19,13 @@
     <meta name="twitter:card" content="summary" />
     <link rel="preload" href="./assets/pirata-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/app/icon-32.png" sizes="32x32" type="image/png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./assets/app/icon-180.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Gotham Social" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -83,6 +90,10 @@
       .contact-stack { gap: 1.25rem; display: grid; scroll-margin-top: 5.5rem; }
       .footer-owner-line { color: var(--ink); font-weight: 500; margin-top: 0.5rem; }
       .footer-client-line { font-size: 0.95rem; }
+      .desktop-nav a.nav-app, .menu-panel a.nav-app { color: var(--gold); }
+      .btn-app::before { content: ""; width: 0.8em; height: 1.1em; margin-right: 0.55em; border: 1.5px solid currentColor; border-radius: 0.2em; display: inline-block; }
+      .footer-app { margin-bottom: 1rem; }
+      .footer-app a.btn-primary, .footer-app a.btn-primary:hover { color: #1a1408; text-decoration: none; }
       .footer-client-meta { margin-top: 0.35rem !important; padding-top: 0 !important; opacity: 0.9; }
     </style>
   </head>
@@ -104,6 +115,7 @@
           <a href="#packages">Packages</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
+          <a class="nav-app" href="./app/">Get the app</a>
           <a class="btn btn-primary menu-cta" href="#contact">Free checkup</a>
         </nav>
         <details class="menu">
@@ -117,6 +129,7 @@
             <a href="#packages">Packages</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
+            <a class="nav-app" href="./app/">Get the app</a>
             <a class="btn btn-primary menu-cta" href="#contact">Free checkup</a>
           </nav>
         </details>
@@ -133,6 +146,7 @@
           <div class="cta-row">
             <a class="btn btn-primary" href="#contact">Book a free 15-min checkup</a>
             <a class="btn btn-ghost" href="#portfolio">See sample sites</a>
+            <a class="btn btn-ghost btn-app" href="./app/">Get the app</a>
           </div>
           <p class="hero-contact hero-ownership">
             <span>Owned by Christopher M. Loeb</span>
@@ -513,9 +527,11 @@
             <a href="#packages">Packages</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
+            <a href="./app/">Get the app</a>
           </nav>
         </div>
         <div>
+          <p class="footer-app"><a class="btn btn-primary" href="./app/">Get the app</a></p>
           <p class="footer-client-line">
             Client inquiries: Matthew J. Larkin ·
             <a href="tel:+13322852882">(332) 285-2882</a> ·
@@ -538,5 +554,10 @@
         <a href="mailto:Gothamcitysochill@gmail.com">Gothamcitysochill@gmail.com</a>
       </p>
     </footer>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () { navigator.serviceWorker.register("./sw.js").catch(function () {}); });
+      }
+    </script>
   </body>
 </html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Get the app · Gotham City Social</title>
+    <meta
+      name="description"
+      content="Get the Gotham City Social app — website &amp; social that get you found. Install it on your phone's home screen. Owned by Christopher M. Loeb · The Loeb Network. Bookings: Matthew J. Larkin, (332) 285-2882."
+    />
+    <meta name="theme-color" content="#07080c" />
+    <meta property="og:title" content="Get the Gotham City Social app" />
+    <meta property="og:description" content="Website &amp; social that get you found. Install Gotham City Social on your home screen." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://gotham-city-social.netlify.app/assets/app/GothamCitySocial_App_1024.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../assets/app/icon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../assets/app/icon-180.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Gotham Social" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="preload" href="../assets/pirata-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" crossorigin href="../assets/index-B3bpZX9e.css">
+    <style>
+      .app-hero { padding: clamp(3.5rem, 8vw, 6rem) 0 clamp(3rem, 6vw, 4.5rem); border-bottom: 1px solid var(--line);
+        background: radial-gradient(90% 70% at 80% 30%, #8fe3ee14, transparent 60%), linear-gradient(#e6c98a10, transparent 40%), var(--bg); }
+      .app-grid { display: grid; gap: clamp(2rem, 5vw, 4rem); align-items: center; grid-template-columns: 1.1fr 0.9fr; }
+      .app-hero h1 { font-family: var(--font-gothic); font-weight: 400; color: #f7f4ee; text-transform: uppercase;
+        font-size: clamp(3rem, 8vw, 5.6rem); line-height: 0.95; letter-spacing: 0.015em; margin: 0.4rem 0 0.8rem; }
+      .app-hero .tagline { color: var(--ink); font-size: clamp(1.1rem, 2.2vw, 1.35rem); max-width: 30ch; }
+      .app-hero .pitch { color: var(--muted); margin-top: 1rem; max-width: 52ch; }
+      .app-art { justify-self: center; width: min(100%, 420px); }
+      .app-art img { width: 100%; height: auto; display: block; border-radius: 22.5%; border: 1px solid var(--line);
+        box-shadow: 0 30px 80px #000a, 0 0 0 6px #e6c98a14; }
+      .app-art figcaption { color: var(--quiet); font-size: 0.8rem; text-align: center; margin-top: 0.9rem; letter-spacing: 0.04em; }
+      .app-cta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
+      .app-cta [hidden] { display: none !important; }
+      .install-status { color: var(--gold); font-size: 0.9rem; margin-top: 0.85rem; min-height: 1.3em; }
+      .app-owner { color: var(--muted); font-size: 0.95rem; margin-top: 1.5rem; }
+      .app-owner a { color: var(--gold); }
+      .steps { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); margin-top: 2rem; }
+      .steps h3 { font-family: var(--font-sans); font-weight: 600; font-size: 1.1rem; margin: 0.4rem 0 0.6rem; color: var(--ink); }
+      .steps ol { margin: 0; padding-left: 1.15rem; color: var(--muted); display: grid; gap: 0.35rem; }
+      .store-note { margin-top: 1.75rem; color: var(--muted); border-left: 2px solid var(--gold); padding-left: 1rem; max-width: 70ch; }
+      .downloads { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 2rem; }
+      .downloads figure { margin: 0; }
+      .downloads img { width: 100%; height: auto; display: block; border: 1px solid var(--line); }
+      .downloads figcaption { margin-top: 0.6rem; color: var(--muted); font-size: 0.9rem; }
+      .downloads a { color: var(--gold); }
+      .app-contacts { display: grid; gap: 1.25rem; grid-template-columns: 1fr 1fr; margin-top: 2rem; }
+      .ownership-strip { color: var(--quiet); text-align: center; font-size: 0.85rem; padding: 2rem 1.25rem 2.5rem; border-top: 1px solid var(--line); }
+      .ownership-strip a { color: var(--gold); }
+      @media (max-width: 860px) {
+        .app-grid, .steps, .app-contacts { grid-template-columns: 1fr; }
+        .app-art { order: -1; width: min(70%, 300px); }
+      }
+      @media (max-width: 520px) { .downloads { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="header-bar wrap">
+        <a class="brand" href="../">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M4 26V14.5h2.4V26M25.6 26V14.5H28V26" fill="none" stroke="#e6c98a" stroke-width="1.5"/>
+            <path d="M5.2 15.4C9 20.2 16 23 26.8 15.4" fill="none" stroke="#e6c98a" stroke-width="1.3"/>
+            <path d="M3 26h26" stroke="#e6c98a" stroke-width="1.3"/>
+          </svg>
+          <span>Gotham City Social</span>
+        </a>
+        <nav class="desktop-nav" aria-label="Primary">
+          <a href="../#services">Services</a>
+          <a href="../#portfolio">Portfolio</a>
+          <a href="../#packages">Packages</a>
+          <a href="../#about">About</a>
+          <a href="./" aria-current="page">App</a>
+          <a class="btn btn-primary menu-cta" href="../#contact">Free checkup</a>
+        </nav>
+        <details class="menu">
+          <summary>
+            <span class="sr-only">Menu</span>
+            <span class="burger" aria-hidden="true"><span></span></span>
+          </summary>
+          <nav class="menu-panel" aria-label="Primary">
+            <a href="../#services">Services</a>
+            <a href="../#portfolio">Portfolio</a>
+            <a href="../#packages">Packages</a>
+            <a href="../#about">About</a>
+            <a href="./" aria-current="page">App</a>
+            <a class="btn btn-primary menu-cta" href="../#contact">Free checkup</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="app-hero" aria-labelledby="app-title">
+        <div class="wrap app-grid">
+          <div>
+            <p class="kicker">The Gotham City Social app · Brooklyn · NYC</p>
+            <h1 id="app-title">Get the app</h1>
+            <p class="tagline">Gotham City Social — website &amp; social that get you found.</p>
+            <p class="pitch">
+              Put Gotham City Social on your home screen. One tap opens the packages, sample sites, and a direct line
+              to book your free 15-minute website &amp; social checkup. It installs straight from this site — no store
+              account, no download size, always the latest version.
+            </p>
+            <div class="app-cta">
+              <button id="install-btn" class="btn btn-primary" type="button" hidden>Install the app</button>
+              <a id="open-app" class="btn btn-primary" href="../">Open the app</a>
+              <a class="btn btn-ghost" href="#install">How to add it to your phone</a>
+              <a class="btn btn-ghost" href="tel:+13322852882">Book: call Matthew</a>
+            </div>
+            <p id="install-status" class="install-status" role="status"></p>
+            <p class="app-owner">
+              Owned by Christopher M. Loeb ·
+              <a href="https://starfall-tek.github.io/loeb-network-preview/">The Loeb Network</a>.
+              Day-to-day bookings: Matthew J. Larkin ·
+              <a href="tel:+13322852882">(332) 285-2882</a>.
+            </p>
+          </div>
+          <figure class="app-art">
+            <img src="../assets/app/app-art-720.jpg" width="720" height="720"
+              alt="Gotham City Social app icon: GOTHAM CITY SOCIAL in gothic lettering over the Brooklyn Bridge and Lower Manhattan skyline at night." />
+            <figcaption>Gotham City Social · app icon</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="install" aria-labelledby="install-title">
+        <div class="wrap">
+          <div class="section-intro">
+            <p class="index">Install</p>
+            <h2 id="install-title">Add it to your home screen</h2>
+            <p>It takes about ten seconds. The app opens full-screen with the Gotham City Social icon, like any other app.</p>
+          </div>
+          <div class="steps">
+            <div class="contact-card">
+              <p class="kicker">iPhone &amp; iPad</p>
+              <h3>Safari</h3>
+              <ol>
+                <li>Open <a href="https://gotham-city-social.netlify.app/">gotham-city-social.netlify.app</a> in Safari.</li>
+                <li>Tap the <strong>Share</strong> button.</li>
+                <li>Tap <strong>Add to Home Screen</strong>, then <strong>Add</strong>.</li>
+              </ol>
+            </div>
+            <div class="contact-card">
+              <p class="kicker">Android</p>
+              <h3>Chrome</h3>
+              <ol>
+                <li>Open <a href="https://gotham-city-social.netlify.app/">gotham-city-social.netlify.app</a> in Chrome.</li>
+                <li>Tap <strong>Install the app</strong> above, or the <strong>⋮</strong> menu.</li>
+                <li>Choose <strong>Install app</strong> (or <strong>Add to Home screen</strong>).</li>
+              </ol>
+            </div>
+            <div class="contact-card">
+              <p class="kicker">Desktop</p>
+              <h3>Chrome or Edge</h3>
+              <ol>
+                <li>Open the site in Chrome or Microsoft Edge.</li>
+                <li>Click the <strong>install</strong> icon in the address bar.</li>
+                <li>Click <strong>Install</strong>.</li>
+              </ol>
+            </div>
+          </div>
+          <p class="store-note">
+            <strong>App Store &amp; Google Play:</strong> coming soon. There is no store listing yet. Until then, this
+            installable web app is the official Gotham City Social app.
+          </p>
+        </div>
+      </section>
+
+      <section class="section band" id="share" aria-labelledby="share-title">
+        <div class="wrap">
+          <div class="section-intro">
+            <p class="index">Share</p>
+            <h2 id="share-title">App art &amp; flyer</h2>
+            <p>Use these when you share the app in a text, a DM, or a story.</p>
+          </div>
+          <div class="downloads">
+            <figure>
+              <img src="../assets/app/app-art-720.jpg" width="720" height="720" loading="lazy"
+                alt="Gotham City Social app icon, 1024 by 1024." />
+              <figcaption>App icon · 1024×1024 ·
+                <a href="../assets/app/GothamCitySocial_App_1024.png" download>Download PNG</a></figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/app/app-poster-720.jpg" width="720" height="720" loading="lazy"
+                alt="Gotham City Social flyer: I actually build websites. Starter $495, Growth $950, Pro $1,795. To book, call Matthew J. Larkin at (332) 285-2882. QR code to the website." />
+              <figcaption>App flyer · 1080×1080 ·
+                <a href="../assets/app/GothamCitySocial_App_1080.png" download>Download PNG</a></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="wrap">
+          <div class="section-intro">
+            <p class="index">Contact</p>
+            <h2 id="contact-title">Book a free 15-min checkup</h2>
+            <p>Bring a link, a profile, or just the name of the business.</p>
+          </div>
+          <div class="app-contacts">
+            <div class="contact-card">
+              <p class="kicker">Client / day-to-day contact</p>
+              <h2>Matthew J. Larkin</h2>
+              <p class="offer">Bookings, questions, and current pricing.</p>
+              <dl class="contact-list">
+                <div><dt>Call</dt><dd><a class="phone" href="tel:+13322852882">(332) 285-2882</a></dd></div>
+                <div><dt>Email</dt><dd><a class="email" href="mailto:Gothamcitysochill@gmail.com">Gothamcitysochill@gmail.com</a></dd></div>
+              </dl>
+            </div>
+            <div class="contact-card">
+              <p class="kicker">Owner</p>
+              <h2>Christopher M. Loeb</h2>
+              <p class="offer">
+                Gotham City Social is owned by Christopher M. Loeb ·
+                <a href="https://starfall-tek.github.io/loeb-network-preview/">The Loeb Network</a> · Christopher M. Loeb Solutions.
+              </p>
+              <dl class="contact-list">
+                <div><dt>Call</dt><dd><a class="phone" href="tel:+15168009843">(516) 800-9843</a></dd></div>
+                <div><dt>Network</dt><dd><a href="https://starfall-tek.github.io/loeb-network-preview/">The Loeb Network</a></dd></div>
+              </dl>
+            </div>
+          </div>
+          <div class="app-cta">
+            <a class="btn btn-primary" href="../#contact">Book a free 15-min checkup</a>
+            <a class="btn btn-ghost" href="../">Open the website</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ownership-strip">
+      Gotham City Social · Owned by Christopher M. Loeb · Powered By The Loeb Network · Christopher M. Loeb Solutions ·
+      <a href="tel:+15168009843">(516) 800-9843</a><br />
+      Client inquiries: Matthew J. Larkin · <a href="tel:+13322852882">(332) 285-2882</a> ·
+      <a href="mailto:Gothamcitysochill@gmail.com">Gothamcitysochill@gmail.com</a>
+    </footer>
+
+    <script>
+      (function () {
+        var menu = document.querySelector(".menu");
+        if (menu) menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { menu.removeAttribute("open"); }); });
+        if ("serviceWorker" in navigator) {
+          window.addEventListener("load", function () { navigator.serviceWorker.register("../sw.js", { scope: "../" }).catch(function () {}); });
+        }
+        var btn = document.getElementById("install-btn");
+        var status = document.getElementById("install-status");
+        var deferred = null;
+        var standalone = window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+        if (standalone) { status.textContent = "You're using the installed app."; }
+        else if (/iphone|ipad|ipod/i.test(navigator.userAgent)) {
+          status.textContent = "On iPhone/iPad: tap Share, then Add to Home Screen.";
+        }
+        window.addEventListener("beforeinstallprompt", function (e) {
+          e.preventDefault(); deferred = e; btn.hidden = false;
+        });
+        btn.addEventListener("click", function () {
+          if (!deferred) return;
+          deferred.prompt();
+          deferred.userChoice.then(function (r) {
+            status.textContent = r.outcome === "accepted" ? "Installed — look for Gotham Social on your home screen." : "No problem — you can install it any time from this page.";
+            deferred = null; btn.hidden = true;
+          });
+        });
+        window.addEventListener("appinstalled", function () { status.textContent = "Installed — look for Gotham Social on your home screen."; btn.hidden = true; });
+      })();
+    </script>
+  </body>
+</html>
