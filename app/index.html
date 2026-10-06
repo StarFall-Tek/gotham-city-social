@@ -6,7 +6,7 @@
     <title>Get the app · Gotham City Social</title>
     <meta
       name="description"
-      content="Get the Gotham City Social app — website &amp; social that get you found. Install it on your phone's home screen. Owned By The Loeb Network • Christopher M. Loeb Solutions. Day-to-day bookings: Matthew J. Larkin, (332) 285-2882."
+      content="Get the Gotham City Social app — website &amp; social that get you found. Install it on your phone's home screen. Owned By The Loeb Network • Christopher M. Loeb Solutions. Packages from $495 with secure Stripe checkout. Call (516) 800-9843. Day-to-day bookings: Matthew J. Larkin, (332) 285-2882."
     />
     <meta name="theme-color" content="#07080c" />
     <meta property="og:title" content="Get the Gotham City Social app" />
@@ -24,6 +24,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="preload" href="../assets/pirata-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" crossorigin href="../assets/index-B3bpZX9e.css">
+    <link rel="stylesheet" href="../assets/pay.css?v=1">
     <style>
       .app-hero { padding: clamp(3.5rem, 8vw, 6rem) 0 clamp(3rem, 6vw, 4.5rem); border-bottom: 1px solid var(--line);
         background: radial-gradient(90% 70% at 80% 30%, #8fe3ee14, transparent 60%), linear-gradient(#e6c98a10, transparent 40%), var(--bg); }
@@ -113,6 +114,7 @@
           <a href="../#services">Services</a>
           <a href="../#portfolio">Portfolio</a>
           <a href="../#packages">Packages</a>
+          <a class="nav-pay" href="#pay">Pay</a>
           <a href="../#about">About</a>
           <a href="./" aria-current="page">App</a>
           <a class="btn btn-primary menu-cta" href="../#contact">Free checkup</a>
@@ -126,6 +128,7 @@
             <a href="../#services">Services</a>
             <a href="../#portfolio">Portfolio</a>
             <a href="../#packages">Packages</a>
+            <a class="nav-pay" href="#pay">Pay</a>
             <a href="../#about">About</a>
             <a href="./" aria-current="page">App</a>
             <a class="btn btn-primary menu-cta" href="../#contact">Free checkup</a>
@@ -133,6 +136,13 @@
         </details>
       </div>
     </header>
+    <div id="paid-banner" class="paid-banner" role="status" aria-live="polite" hidden>
+      <div class="wrap paid-banner-inner">
+        <span class="paid-banner-mark" aria-hidden="true">&#10003;</span>
+        <p class="paid-banner-text"><strong>Payment received — thank you!</strong> We'll reach out within 1 business day to kick off your project. Questions: <a href="tel:+15168009843">(516) 800-9843</a> · <a href="mailto:Gothamcitysochill@gmail.com">Gothamcitysochill@gmail.com</a></p>
+        <button type="button" class="paid-banner-close" data-paid-close aria-label="Dismiss thank-you message">&times;</button>
+      </div>
+    </div>
 
     <main id="content">
       <section class="app-hero" aria-labelledby="app-title">
@@ -149,7 +159,9 @@
             <div class="app-cta">
               <button id="install-btn" class="btn btn-primary" type="button" hidden>Install the app</button>
               <a id="open-app" class="btn btn-primary" href="../">Open the app</a>
+              <a class="btn btn-primary" href="#pay">Packages &amp; Pay</a>
               <a class="btn btn-ghost" href="#install">How to add it to your phone</a>
+              <a class="btn btn-ghost" href="tel:+15168009843">Call (516) 800-9843</a>
               <a class="btn btn-ghost" href="tel:+13322852882">Book: call Matthew</a>
               <button type="button" class="btn btn-ghost btn-share" data-share
                 data-share-title="Gotham City Social"
@@ -163,6 +175,7 @@
             <p id="install-status" class="install-status" role="status"></p>
             <p class="app-owner">
               Owned By The Loeb Network • Christopher M. Loeb Solutions.
+              Christopher M. Loeb · <a href="tel:+15168009843">(516) 800-9843</a>.
               Day-to-day bookings: Matthew J. Larkin ·
               <a href="tel:+13322852882">(332) 285-2882</a>.
             </p>
@@ -173,6 +186,85 @@
               alt="Gotham City Social app icon: GOTHAM CITY SOCIAL in gothic lettering over the Brooklyn Bridge and Lower Manhattan skyline at night, BROOKLYN · NYC, Owned By The Loeb Network • Christopher M. Loeb Solutions." />
             <figcaption>Gotham City Social · app icon · Owned By The Loeb Network • Christopher M. Loeb Solutions</figcaption>
           </figure>
+        </div>
+      </section>
+
+      <section class="section band" id="pay" aria-labelledby="pay-title">
+        <div class="wrap">
+          <div class="section-intro">
+            <p class="index">Packages &amp; Pay</p>
+            <h2 id="pay-title">Pick a package. Start today.</h2>
+            <p class="lede">
+              One-time project fees, not monthly. Starter is the website. Growth adds social profiles and local search. Pro is the full launch, with a handoff you can run. Pay securely online, or book a free call first if you want to talk through scope.
+            </p>
+          </div>
+          <div class="price-grid">
+            <article class="package">
+              <h3>Starter</h3>
+              <p class="scope">Website</p>
+              <p class="channels" aria-label="Channels in Starter"><span>site</span></p>
+              <p class="price">$495</p>
+              <p class="rate-tag">One-time project fee</p>
+              <p class="blurb">A real page for a business that needs to exist online.</p>
+              <ul>
+                <li>One-page website</li>
+                <li>Mobile layout</li>
+                <li>Tap-to-call and email</li>
+                <li>Page title and description</li>
+                <li>One revision round</li>
+              </ul>
+              <div class="pay-block">
+                <a class="btn btn-primary btn-pay" href="https://buy.stripe.com/bJe00jdTvekj4mn2nK8EM00" target="_blank" rel="noopener" aria-label="Pay $495 for the Starter package — secure Stripe checkout, opens in a new tab"><svg class="pay-lock" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Pay $495 — Start Now</a>
+                <p class="pay-note">Secure checkout by <span class="stripe-word">Stripe</span>.</p>
+                <p class="pay-alt"><a class="text-link" href="#contact">Book a free call first</a> · <a class="text-link" href="mailto:Gothamcitysochill@gmail.com?subject=Starter%20package%20%E2%80%94%20Gotham%20City%20Social">Ask about Starter</a></p>
+              </div>
+            </article>
+            <article class="package featured">
+              <h3>Growth</h3>
+              <p class="scope">Website, social, and local search</p>
+              <p class="channels" aria-label="Channels in Growth"><span>site</span><span>IG</span><span>SEO</span></p>
+              <p class="price">$950</p>
+              <p class="rate-tag">One-time project fee</p>
+              <p class="blurb">The page, the profiles, and the listing that help people find you.</p>
+              <ul>
+                <li>Everything in Starter</li>
+                <li>A longer, fuller page</li>
+                <li>Social bios and profile setup</li>
+                <li>Google Business profile setup</li>
+                <li>Two revision rounds</li>
+              </ul>
+              <div class="pay-block">
+                <a class="btn btn-primary btn-pay" href="https://buy.stripe.com/cNifZhcPr6RR1ab7I48EM01" target="_blank" rel="noopener" aria-label="Pay $950 for the Growth package — secure Stripe checkout, opens in a new tab"><svg class="pay-lock" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Pay $950 — Start Now</a>
+                <p class="pay-note">Secure checkout by <span class="stripe-word">Stripe</span>.</p>
+                <p class="pay-alt"><a class="text-link" href="#contact">Book a free call first</a> · <a class="text-link" href="mailto:Gothamcitysochill@gmail.com?subject=Growth%20package%20%E2%80%94%20Gotham%20City%20Social">Ask about Growth</a></p>
+              </div>
+            </article>
+            <article class="package">
+              <h3>Pro</h3>
+              <p class="scope">Full launch</p>
+              <p class="channels" aria-label="Channels in Pro"><span>site</span><span>IG</span><span>SEO</span></p>
+              <p class="price">$1,795</p>
+              <p class="rate-tag">One-time project fee</p>
+              <p class="blurb">Site, social, search, and a first month you can run yourself.</p>
+              <ul>
+                <li>Everything in Growth</li>
+                <li>An extra page or a deeper custom layout</li>
+                <li>A caption starter kit you can reuse</li>
+                <li>Matching name, colors, and contact details</li>
+                <li>Launch checklist and a live walkthrough</li>
+              </ul>
+              <div class="pay-block">
+                <a class="btn btn-primary btn-pay" href="https://buy.stripe.com/dRm7sL02F1xxf112nK8EM02" target="_blank" rel="noopener" aria-label="Pay $1,795 for the Pro package — secure Stripe checkout, opens in a new tab"><svg class="pay-lock" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Pay $1,795 — Start Now</a>
+                <p class="pay-note">Secure checkout by <span class="stripe-word">Stripe</span>.</p>
+                <p class="pay-alt"><a class="text-link" href="#contact">Book a free call first</a> · <a class="text-link" href="mailto:Gothamcitysochill@gmail.com?subject=Pro%20package%20%E2%80%94%20Gotham%20City%20Social">Ask about Pro</a></p>
+              </div>
+            </article>
+          </div>
+          <p class="price-disclaimer">
+            Questions before you pay? Call Christopher M. Loeb at <a href="tel:+15168009843">(516) 800-9843</a>,
+            or book with Matthew J. Larkin at <a href="tel:+13322852882">(332) 285-2882</a> ·
+            <a href="mailto:Gothamcitysochill@gmail.com">Gothamcitysochill@gmail.com</a>.
+          </p>
         </div>
       </section>
 
@@ -260,21 +352,21 @@
           </div>
           <div class="app-contacts">
             <div class="contact-card">
-              <p class="kicker">Day-to-day booking contact</p>
-              <h2>Matthew J. Larkin</h2>
-              <p class="offer">Bookings, questions, and current pricing.</p>
-              <dl class="contact-list">
-                <div><dt>Call</dt><dd><a class="phone" href="tel:+13322852882">(332) 285-2882</a></dd></div>
-                <div><dt>Email</dt><dd><a class="email" href="mailto:Gothamcitysochill@gmail.com">Gothamcitysochill@gmail.com</a></dd></div>
-              </dl>
-            </div>
-            <div class="contact-card">
               <p class="kicker">Ownership</p>
               <h2>The Loeb Network</h2>
               <p class="offer">Owned By The Loeb Network • Christopher M. Loeb Solutions</p>
               <dl class="contact-list">
                 <div><dt>Call Christopher M. Loeb</dt><dd><a class="phone" href="tel:+15168009843">(516) 800-9843</a></dd></div>
                 <div><dt>Network</dt><dd><a href="https://starfall-tek.github.io/loeb-network-preview/">The Loeb Network</a></dd></div>
+              </dl>
+            </div>
+            <div class="contact-card">
+              <p class="kicker">Day-to-day booking contact</p>
+              <h2>Matthew J. Larkin</h2>
+              <p class="offer">Bookings, questions, and current pricing.</p>
+              <dl class="contact-list">
+                <div><dt>Call</dt><dd><a class="phone" href="tel:+13322852882">(332) 285-2882</a></dd></div>
+                <div><dt>Email</dt><dd><a class="email" href="mailto:Gothamcitysochill@gmail.com">Gothamcitysochill@gmail.com</a></dd></div>
               </dl>
             </div>
           </div>
@@ -294,6 +386,7 @@
     </footer>
 
     <script src="../assets/share.js" defer></script>
+    <script src="../assets/pay.js?v=1" defer></script>
     <script>
       (function () {
         var menu = document.querySelector(".menu");

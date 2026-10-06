@@ -1,0 +1,33 @@
+/* Gotham City Social — Stripe Pay buttons + post-payment thank-you banner */
+.package { display: flex; flex-direction: column; }
+.package .pay-block { margin-top: auto; display: grid; gap: 0.55rem; }
+.btn-pay { width: 100%; min-height: 52px; padding: 0.85rem 1rem; font-size: 1rem; letter-spacing: 0.01em;
+  text-align: center; white-space: normal; box-shadow: 0 10px 28px #e6c98a26, inset 0 -2px 0 #c6a15e;
+  border-color: var(--gold); }
+.btn-pay:hover { background: #f0d7a4; box-shadow: 0 12px 34px #e6c98a40, inset 0 -2px 0 #c6a15e; }
+.btn-pay:focus-visible { outline: 2px solid #fff8e8; outline-offset: 3px; }
+.btn-pay .pay-lock { width: 0.95em; height: 0.95em; margin-right: 0.5em; flex: none; }
+.pay-note { color: var(--quiet); font-size: 0.8rem; line-height: 1.4; margin: 0; }
+.pay-note .stripe-word { color: var(--ink); font-weight: 600; }
+.pay-alt { margin: 0.15rem 0 0; font-size: 0.92rem; color: var(--muted); }
+.pay-alt a { color: var(--gold); font-weight: 500; }
+.desktop-nav a.nav-pay, .menu-panel a.nav-pay { color: var(--gold); font-weight: 600; }
+
+/* ?paid=1 thank-you banner */
+.paid-banner[hidden] { display: none !important; }
+.paid-banner { position: relative; z-index: 40; border-bottom: 1px solid var(--gold);
+  background: linear-gradient(90deg, #e6c98a2e, #e6c98a14 60%, #8fe3ee12), #0c1016; color: var(--ink); }
+.paid-banner-inner { display: flex; align-items: flex-start; gap: 0.9rem; padding: 0.95rem 0; }
+.paid-banner-mark { flex: none; width: 2rem; height: 2rem; border: 1px solid var(--gold); color: var(--gold);
+  display: grid; place-items: center; font-weight: 700; margin-top: 0.1rem; }
+.paid-banner-text { flex: 1; min-width: 0; margin: 0; line-height: 1.5; }
+.paid-banner-text strong { color: var(--gold); font-weight: 600; }
+.paid-banner-text a { color: var(--gold); overflow-wrap: anywhere; }
+.paid-banner-close { flex: none; appearance: none; background: transparent; border: 1px solid var(--line); color: var(--gold);
+  width: 44px; height: 44px; font-size: 1.4rem; line-height: 1; cursor: pointer; }
+.paid-banner-close:hover { background: #e6c98a1a; border-color: var(--gold); }
+@media (forced-colors: active) { .btn-pay { border: 1px solid buttontext; } }
+@media print { .paid-banner, .pay-block { display: none !important; } }
+.paid-banner-text a[href^="tel:"], .price-disclaimer a[href^="tel:"] { white-space: nowrap; }
+/* Keep the pricing intro from sticking over the cards (and their Pay buttons) while scrolling on wide screens */
+#packages .section-intro, #pay .section-intro { position: static; }

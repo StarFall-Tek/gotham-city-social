@@ -1,9 +1,10 @@
 /* Gotham City Social web app — network-first service worker.
    Always tries the live site first (so new deploys show up immediately);
    falls back to the last cached copy when offline. */
-const CACHE = "gcs-app-v4";
+const CACHE = "gcs-app-v5";
 const CORE = ["./", "./index.html", "./app/", "./manifest.webmanifest", "./favicon.svg",
-  "./assets/app/icon-192.png", "./assets/app/icon-512.png", "./assets/app/app-art-720.jpg"];
+  "./assets/app/icon-192.png", "./assets/app/icon-512.png", "./assets/app/app-art-720.jpg",
+  "./assets/pay.css?v=1", "./assets/pay.js?v=1", "./assets/share.js"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(CORE)).catch(() => {}));
